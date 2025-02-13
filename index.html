@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css" media="all" />
+    <title>Parse Data</title>
+  </head>
+  <body>
+    
+    <section id="main-header">
+      <div>
+        <h1>Learn sync and async</h1>
+        <p>Here i was learning how to work with JSON data.</p>
+        <p>If the field 'complited' in data is 'true' text is green else red.</p>
+      </div>
+    </section>
+  
+    <section id="content">
+      <div id="body-data">
+
+        <form id="numberForm">
+          <label for="numberForm"> Input a number: </label>
+          <input type="number" id="numberInput" required max="50" min="1">
+          <button type="submit" id="btn-sync"> Send (sync) </button>
+          <button type="submit" id ="btn-async"> Send (async) </button>
+        </form>
+
+        <button type="button" id="btn-table">Show in table</button>
+        <button type="button" id="btn-lines">Show in lines</button>
+
+        <h2>Данные о пользователях:</h2>
+
+        <div id="tasksContainer"></div>
+
+        <table id="tasksTable">
+          <thead class="table-header">
+            <!-- Здесь будут названия столбцов -->
+          </thead>
+          <tbody>
+            <!-- Здесь будут данные из JSON -->
+          </tbody>
+        </table>
+        
+      </div>
+    </section>
+
+    <script src="src/index.js"></script>
+  </body>
+</html>
