@@ -161,6 +161,10 @@ function displayTableTodos(todos) {
 
 form.addEventListener('submit', function (event) {
     event.preventDefault();
+    
+    tasksContainer.innerHTML = '';
+    tableBody.innerHTML = '';
+    tableHeader.innerHTML = '';
 
     const numberValue = numberInput.value;
 
